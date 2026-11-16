@@ -1,0 +1,313 @@
+/*
+ * ClipVault - Windows 11 Inspired GNOME Shell Theme
+ */
+
+/* Invisible backdrop catching clicks outside the popup */
+.clipvault-backdrop {
+    background-color: transparent;
+}
+
+/* Main floating panel */
+.clipvault-panel {
+    background-color: rgba(30, 32, 40, 0.94);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 14px;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.55);
+    padding: 12px;
+    color: #f0f0f4;
+}
+
+/* Light theme adaptation if system shell is light */
+:theme-light .clipvault-panel {
+    background-color: rgba(246, 248, 252, 0.96);
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.22);
+    color: #1a1a24;
+}
+
+/* Header */
+.clipvault-header {
+    margin-bottom: 10px;
+    padding: 2px 4px;
+}
+
+.clipvault-title-box {
+    spacing: 8px;
+}
+
+.clipvault-title-icon {
+    color: #3584e4;
+}
+
+.clipvault-title-text {
+    font-weight: 700;
+    font-size: 13pt;
+    letter-spacing: 0.2px;
+}
+
+/* Header buttons */
+.clipvault-header-btn {
+    border-radius: 8px;
+    padding: 6px 8px;
+    color: #a0a4b0;
+    background-color: transparent;
+    transition: all 120ms ease;
+    margin-left: 2px;
+}
+
+.clipvault-header-btn:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+    color: #ffffff;
+}
+
+.clipvault-header-btn:active,
+.clipvault-header-btn.active {
+    background-color: rgba(53, 132, 228, 0.35);
+    color: #62a0ea;
+}
+
+.clipvault-close-btn:hover {
+    background-color: rgba(224, 27, 36, 0.3);
+    color: #f66151;
+}
+
+/* Search Bar */
+.clipvault-search-box {
+    background-color: rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    padding: 4px 10px;
+    margin-bottom: 10px;
+    spacing: 8px;
+    transition: border-color 150ms ease;
+}
+
+.clipvault-search-box:focus-within {
+    border-color: #3584e4;
+    box-shadow: 0 0 0 1px #3584e4;
+}
+
+.clipvault-search-icon {
+    color: #888d99;
+}
+
+.clipvault-search-entry {
+    background-color: transparent;
+    border: none;
+    color: #f0f0f4;
+    font-size: 10.5pt;
+    padding: 4px 0;
+}
+
+.clipvault-search-entry:focus {
+    box-shadow: none;
+}
+
+.clipvault-search-clear-btn {
+    border-radius: 6px;
+    padding: 2px;
+    color: #888d99;
+}
+
+.clipvault-search-clear-btn:hover {
+    color: #ffffff;
+}
+
+/* Scroll View */
+.clipvault-scrollview {
+    padding-right: 2px;
+}
+
+.clipvault-content-box {
+    spacing: 8px;
+}
+
+/* Section */
+.clipvault-section {
+    spacing: 6px;
+    margin-bottom: 6px;
+}
+
+.clipvault-section-header {
+    spacing: 6px;
+    padding: 4px 4px 2px 4px;
+}
+
+.clipvault-section-icon {
+    color: #777c88;
+}
+
+.clipvault-section-title {
+    font-size: 8.5pt;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    color: #8a8f9d;
+}
+
+.clipvault-section-count {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    font-size: 8pt;
+    font-weight: 700;
+    color: #a0a4b0;
+    padding: 1px 6px;
+}
+
+.clipvault-cards-list {
+    spacing: 6px;
+}
+
+/* Card */
+.clipvault-card {
+    background-color: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 9px;
+    padding: 8px 10px;
+    transition: all 120ms ease;
+}
+
+.clipvault-card:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.15);
+}
+
+.clipvault-card:active,
+.clipvault-card.active {
+    background-color: rgba(53, 132, 228, 0.18);
+    border-color: rgba(53, 132, 228, 0.6);
+}
+
+.clipvault-card-inner {
+    spacing: 6px;
+}
+
+/* Card Header */
+.clipvault-card-header {
+    spacing: 8px;
+}
+
+/* Type Badges */
+.clipvault-badge {
+    font-size: 7.5pt;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding: 2px 6px;
+    border-radius: 5px;
+}
+
+.clipvault-badge-text {
+    background-color: rgba(100, 110, 130, 0.3);
+    color: #b0b8c8;
+}
+
+.clipvault-badge-url {
+    background-color: rgba(53, 132, 228, 0.3);
+    color: #62a0ea;
+}
+
+.clipvault-badge-code {
+    background-color: rgba(87, 227, 137, 0.25);
+    color: #57e389;
+}
+
+.clipvault-badge-email {
+    background-color: rgba(246, 185, 59, 0.25);
+    color: #f6b93b;
+}
+
+.clipvault-badge-image {
+    background-color: rgba(220, 92, 190, 0.25);
+    color: #dc5cbe;
+}
+
+.clipvault-card-time {
+    font-size: 8pt;
+    color: #7b808e;
+}
+
+.clipvault-action-btn {
+    border-radius: 6px;
+    padding: 3px 5px;
+    color: #7b808e;
+    background-color: transparent;
+    transition: all 120ms ease;
+}
+
+.clipvault-action-btn:hover {
+    background-color: rgba(255, 255, 255, 0.14);
+    color: #ffffff;
+}
+
+.clipvault-action-btn.clipvault-pinned {
+    color: #3584e4;
+}
+
+.clipvault-delete-btn:hover {
+    background-color: rgba(224, 27, 36, 0.25);
+    color: #f66151;
+}
+
+/* Previews */
+.clipvault-card-preview {
+    font-size: 9.5pt;
+    line-height: 1.35;
+    color: #e2e4ea;
+}
+
+.clipvault-code {
+    font-family: monospace, 'Courier New';
+    font-size: 9pt;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 4px 6px;
+    border-radius: 5px;
+    color: #8ff0a4;
+}
+
+.clipvault-image-preview {
+    border-radius: 6px;
+    margin-top: 4px;
+}
+
+/* Empty State */
+.clipvault-empty-state {
+    padding: 36px 16px;
+    spacing: 10px;
+}
+
+.clipvault-empty-icon {
+    color: #525765;
+}
+
+.clipvault-empty-title {
+    font-size: 11.5pt;
+    font-weight: 700;
+    color: #8c91a0;
+}
+
+.clipvault-empty-subtitle {
+    font-size: 9pt;
+    color: #636875;
+    text-align: center;
+}
+
+/* Footer */
+.clipvault-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding-top: 8px;
+    margin-top: 6px;
+}
+
+.clipvault-footer-text {
+    font-size: 8pt;
+    color: #7b808e;
+}
+
+.clipvault-footer-status {
+    font-size: 8pt;
+    color: #7b808e;
+}
+
+.clipvault-footer-status.active {
+    color: #e5a50a;
+    font-weight: 700;
+}
