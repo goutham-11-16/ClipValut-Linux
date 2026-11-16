@@ -1,0 +1,16 @@
+# Compiled schemas
+schemas/gschemas.compiled
+
+# Zip bundles
+*.shell-extension.zip
+
+# Editor / OS files
+.DS_Store
+*.swp
+*~
+.idea/
+.vscode/
+
+# Node / temporary files
+*.tmp*
+node_modules/
