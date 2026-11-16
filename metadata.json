@@ -1,0 +1,16 @@
+{
+  "name": "ClipVault",
+  "description": "Windows 11-style native floating clipboard history manager for GNOME Shell on Wayland",
+  "uuid": "clipvault@goutham.github.com",
+  "shell-version": [
+    "45",
+    "46",
+    "47",
+    "48",
+    "49",
+    "50"
+  ],
+  "url": "https://github.com/goutham-11-16/ClipValut-Linux",
+  "settings-schema": "org.gnome.shell.extensions.clipvault",
+  "version": 1
+}

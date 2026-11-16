@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="clipvault">
+  <schema id="org.gnome.shell.extensions.clipvault" path="/org/gnome/shell/extensions/clipvault/">
+    <key name="shortcut" type="as">
+      <default>['&lt;Super&gt;&lt;Alt&gt;v']</default>
+      <summary>Clipboard History Shortcut</summary>
+      <description>Global keybinding to toggle the ClipVault floating clipboard popup</description>
+    </key>
+    <key name="history-size" type="i">
+      <default>100</default>
+      <summary>Max History Size</summary>
+      <description>Maximum number of unpinned history items to retain</description>
+    </key>
+    <key name="private-mode" type="b">
+      <default>false</default>
+      <summary>Private Mode</summary>
+      <description>When true, clipboard changes are not recorded</description>
+    </key>
+    <key name="history-expiration-days" type="i">
+      <default>0</default>
+      <summary>History Expiration in Days</summary>
+      <description>0 means never expire automatically, otherwise delete unpinned items older than N days</description>
+    </key>
+    <key name="clear-on-interval" type="b">
+      <default>false</default>
+      <summary>Clear on interval</summary>
+      <description>Automatically clear unpinned history periodically</description>
+    </key>
+    <key name="clear-interval-minutes" type="i">
+      <default>60</default>
+      <summary>Interval in minutes</summary>
+      <description>Interval to clear unpinned history</description>
+    </key>
+    <key name="excluded-apps" type="as">
+      <default>['1Password', 'keepassxc', 'KeePassXC', 'bitwarden', 'Bitwarden', 'org.gnome.Keyring', 'secrets']</default>
+      <summary>Excluded Applications</summary>
+      <description>Window wm_class or app IDs whose copies should be ignored</description>
+    </key>
+    <key name="popup-width" type="i">
+      <default>380</default>
+      <summary>Popup Width</summary>
+      <description>Width of the floating popup in pixels</description>
+    </key>
+    <key name="popup-max-height" type="i">
+      <default>520</default>
+      <summary>Popup Max Height</summary>
+      <description>Maximum height of the floating popup in pixels</description>
+    </key>
+    <key name="enable-images" type="b">
+      <default>true</default>
+      <summary>Enable Images</summary>
+      <description>Store image clips in addition to text</description>
+    </key>
+    <key name="debug-logging" type="b">
+      <default>false</default>
+      <summary>Debug Logging</summary>
+      <description>Enable verbose extension logging without logging clipboard content</description>
+    </key>
+  </schema>
+</schemalist>
